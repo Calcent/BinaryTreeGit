@@ -111,7 +111,11 @@ class BinarySearchTree{
    */
    public int getMin(Node root){
       //implement me
-
+      if(root.left == null){
+         return root.value;
+      } else {
+         return getMin(root.left);
+      }
    }
   
   
