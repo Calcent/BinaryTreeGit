@@ -40,6 +40,11 @@ class BinarySearchTree{
    /*
    pre-order traversal
    */
+
+   /**
+    * Traverses the binary search tree recursively in preOrder
+    * @param root, provides the method with the starting root
+    */
    public void preOrderTraversal(Node root){
       //implement me
       if(root == null){
@@ -56,6 +61,11 @@ class BinarySearchTree{
    /*
    in-order traversal
    */
+
+   /**
+    * Traverses the binary search tree recursively in order
+    * @param root provides the method with the starting root
+    */
    public void inOrderTraversal(Node root){
       //implement me
       if(root == null){
@@ -72,6 +82,11 @@ class BinarySearchTree{
    /*
    post-order traversal
    */
+
+   /**
+    * Traverses the binary search tree recursively in post order
+    * @param root provides the method with the starting root
+    */
    public void postOrderTraversal(Node root){
       //implement me
       if(root == null){
@@ -89,6 +104,13 @@ class BinarySearchTree{
    a method to find the node in the tree
    with a specific value
    */
+
+   /**
+    * Finds the node at the location of the key, and then returns true or false depending on if it finds it or not
+    * @param root provides the method with the root
+    * @param key provides the method with the location
+    * @return
+    */
    public boolean find(Node root, int key){
 	  //implement me
       if(root == null){
@@ -109,6 +131,12 @@ class BinarySearchTree{
    a method to find the node in the tree
    with a smallest key
    */
+
+   /**
+    * Gets the minimum node in the binary search tree
+    * @param root provides the method with the starting root
+    * @return
+    */
    public int getMin(Node root){
       //implement me
       if(root.left == null){
@@ -124,6 +152,12 @@ class BinarySearchTree{
    a method to find the node in the tree
    with a largest key
    */
+
+   /**
+    * Gets the maximum node inside of the binary search tree
+    * @param root provides the method with the starting root
+    * @return
+    */
    public int getMax(Node root){
 	  //implement me
       if(root.right == null){
