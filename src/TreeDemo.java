@@ -91,7 +91,16 @@ class BinarySearchTree{
    */
    public boolean find(Node root, int key){
 	  //implement me
-      return false;           
+      if(root == null){
+         return false;
+      }
+      if(key == root.value){
+         return true;
+      } else if(key < root.value){
+         return find(root.left, key);
+      } else {
+         return find(root.right, key);
+      }
    }
    
    
@@ -102,6 +111,7 @@ class BinarySearchTree{
    */
    public int getMin(Node root){
       //implement me
+
    }
   
   
