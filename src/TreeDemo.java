@@ -126,6 +126,11 @@ class BinarySearchTree{
    */
    public int getMax(Node root){
 	  //implement me
+      if(root.right == null){
+         return root.value;
+      } else {
+         return getMax(root.right);
+      }
    }
    
    
